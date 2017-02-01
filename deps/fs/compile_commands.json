@@ -1,0 +1,14 @@
+[
+{ "file"      : "/Users/moralesarias94/Documents/Work/telematicap1/deps/fs/c_src/mac/cli.c"
+, "directory" : "/Users/moralesarias94/Documents/Work/telematicap1/deps/fs"
+, "command"   : "clang -c -Wno-deprecated-declarations -g -Wall -fPIC -MMD -I\"/usr/local/Cellar/erlang/19.1/lib/erlang/lib/erl_interface-3.9.1/include\" -I\"/usr/local/Cellar/erlang/19.1/lib/erlang/erts-8.1/include\" /Users/moralesarias94/Documents/Work/telematicap1/deps/fs/c_src/mac/cli.c -o /Users/moralesarias94/Documents/Work/telematicap1/deps/fs/c_src/mac/cli.o"
+},
+{ "file"      : "/Users/moralesarias94/Documents/Work/telematicap1/deps/fs/c_src/mac/compat.c"
+, "directory" : "/Users/moralesarias94/Documents/Work/telematicap1/deps/fs"
+, "command"   : "clang -c -Wno-deprecated-declarations -g -Wall -fPIC -MMD -I\"/usr/local/Cellar/erlang/19.1/lib/erlang/lib/erl_interface-3.9.1/include\" -I\"/usr/local/Cellar/erlang/19.1/lib/erlang/erts-8.1/include\" /Users/moralesarias94/Documents/Work/telematicap1/deps/fs/c_src/mac/compat.c -o /Users/moralesarias94/Documents/Work/telematicap1/deps/fs/c_src/mac/compat.o"
+},
+{ "file"      : "/Users/moralesarias94/Documents/Work/telematicap1/deps/fs/c_src/mac/main.c"
+, "directory" : "/Users/moralesarias94/Documents/Work/telematicap1/deps/fs"
+, "command"   : "clang -c -Wno-deprecated-declarations -g -Wall -fPIC -MMD -I\"/usr/local/Cellar/erlang/19.1/lib/erlang/lib/erl_interface-3.9.1/include\" -I\"/usr/local/Cellar/erlang/19.1/lib/erlang/erts-8.1/include\" /Users/moralesarias94/Documents/Work/telematicap1/deps/fs/c_src/mac/main.c -o /Users/moralesarias94/Documents/Work/telematicap1/deps/fs/c_src/mac/main.o"
+}
+]
