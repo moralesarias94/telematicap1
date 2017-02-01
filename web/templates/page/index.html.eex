@@ -20,7 +20,7 @@
 
     <div class="col-lg-6">
       <%= if @wallet do %>
-        <h3><%= @wallet.name %>: <span id="wallet_balance"> $ <%=@wallet.balance%> </span></h3>
+        <h3><%= @wallet.name %>: <span id="wallet_balance"><%=@wallet.balance%> </span></h3>
       <% end %>
     </div>
 
@@ -40,7 +40,7 @@
                     <% end %>
                   </i>
                   
-                  <span id="transaction_<%= transaction.id %>_value" data-type="<%= transaction.type %>" data-value="<%= transaction.value %>"><%= transaction.description %> $<%= transaction.value %> <i style="float: right; color: red" data-id="<%=transaction.id%>" class="delete_transaction material-icons">delete</i>
+                  <span id="transaction_<%= transaction.id %>_value" data-id="<%= transaction.id %>" data-type="<%= transaction.type %>" data-value="<%= transaction.value %>"><%= transaction.description %> $<%= transaction.value %> <i style="float: right; color: red" data-id="<%=transaction.id%>" class="delete_transaction material-icons">delete</i>
                  
               
                 </p>

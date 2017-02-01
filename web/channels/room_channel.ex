@@ -4,7 +4,7 @@ defmodule Telematicap1.RoomChannel do
   alias Telematicap1.Wallet
   alias Telematicap1.{Repo}
   alias Ecto
-
+  intercept ["new_transaction"]
   def join("room:lobby", _message, socket) do
     {:ok, socket}
   end
@@ -25,6 +25,8 @@ defmodule Telematicap1.RoomChannel do
                 wallet = Repo.get!(Wallet, wallet_id)
                 balance = wallet.balance
                 IO.inspect(transaction.value)
+                IO.puts("Socket info")
+                IO.inspect(socket)
                 if(transaction.type == "deposit") do
                   balance = balance + transaction.value
                 else
@@ -37,7 +39,7 @@ defmodule Telematicap1.RoomChannel do
                     body = Map.put(body, :id, transaction.id) # Updated with success
                   {:error, changeset} -> # Something went wrong
                 end        
-                broadcast! socket, "new_transaction", %{body: body}
+                push socket, "new_transaction", %{body: body}
                 {:noreply, socket}
         {:error, changeset} -> {:noreply, socket}
     end
@@ -45,7 +47,8 @@ defmodule Telematicap1.RoomChannel do
   end
 
   def handle_out("new_transaction", payload, socket) do
-    push socket, "new_msg", payload
+    IO.puts("Handle out")
+    push socket, "new_transaction", payload
     {:noreply, socket}
   end
 end

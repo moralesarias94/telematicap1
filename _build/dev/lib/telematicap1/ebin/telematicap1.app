@@ -9,6 +9,7 @@
                         'Elixir.Telematicap1.LayoutView',
                         'Elixir.Telematicap1.PageController',
                         'Elixir.Telematicap1.PageView',
+                        'Elixir.Telematicap1.PasswordController',
                         'Elixir.Telematicap1.PasswordView',
                         'Elixir.Telematicap1.RegistrationController',
                         'Elixir.Telematicap1.RegistrationView',

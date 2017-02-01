@@ -1513,7 +1513,7 @@ $(document).ready(function () {
       success: function success(result) {
 
         var balance = parseInt($("#wallet_balance").text());
-
+        console.log(balance + " Balance");
         if ($("#transaction_" + id + "_value").attr('data-type') == "deposit") {
           var value = $("#transaction_" + id + "_value").attr('data-value');
 
