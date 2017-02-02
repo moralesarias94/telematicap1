@@ -18,3 +18,13 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * Docs: https://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
+
+ ## Demo
+
+ * https://afternoon-lowlands-86450.herokuapp.com/
+
+
+ ## Descripción
+
+ Esta aplicación te permite registrarte y logearte. Además puedes crear una billetera virtual donde podrás hacer depositos y 'pagos'.
+ Todo con el fin de manejar tus finanzas de una manera mejor.
